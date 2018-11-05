@@ -1,0 +1,393 @@
+.flbtn,
+.tag,
+.fltact,
+.tago,
+.tagb,
+.tagy {
+  color: #fff;
+}
+.tago {
+  background-color: #f03e06;
+}
+.tagb {
+  background-color: #0681e8;
+}
+.tagy {
+  background-color: #f0a239;
+}
+.popmenu .menu,
+.dlgbox {
+  background-color: #fff;
+}
+.selbtn,
+.editBox {
+  border: 1px solid #ccc;
+}
+.content-box .ctboxtl {
+  border-bottom: 1px solid #f5f5f5;
+}
+.popmenu .menu,
+.content-box .ctboxtl,
+.content-box .ctboxct {
+  padding: 10px;
+}
+.selbtn {
+  padding: 0 10px;
+}
+.cdtilst,
+.vtabs {
+  margin-left: 15px;
+}
+.tag,
+.tag,
+.tago,
+.tago,
+.tagb,
+.tagb,
+.tagy,
+.tagy {
+  border-radius: 50%;
+}
+.selbtn,
+.cdtilst .flbtn,
+.vtabs .flbtn {
+  font-size: 87%;
+}
+.flbtn,
+.tag,
+.selbtn,
+.dlgbox .dlgct,
+.dlgbox .cancel,
+.dlgbox .sure,
+.fltact,
+.tago,
+.tagb,
+.tagy {
+  text-align: center;
+}
+.cdtilst .flbtn,
+.vtabs .flbtn {
+  text-align: left;
+}
+.dlgbox .dlgct,
+.dlgbox .sure {
+  color: #333;
+}
+.selbtn,
+.cdtilst .flbtn,
+.vtabs .flbtn,
+.dlgbox .cancel {
+  color: #999;
+}
+.tabs .tab,
+.tabs .tab:after {
+  vertical-align: middle;
+}
+.content-box.m0,
+.cdtilst .flbtn,
+.vtabs .flbtn {
+  margin: 0;
+}
+.chkboxCirle .mark,
+.chkboxSquare.checked .mark {
+  display: none;
+}
+.fltact,
+.imgBox,
+.imgChkBox {
+  display: block;
+}
+.tag,
+.selbtn,
+.editBox span:first-child,
+.editBox span:last-child,
+.tabs .tab,
+.tabs .tab:after,
+.tago,
+.tagb,
+.tagy {
+  display: inline-block;
+  -moz-inline-stack: inline-block;
+}
+.fbbtn {
+  top: 0;
+}
+.loadingbg {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0);
+}
+.loading {
+  width: 75px;
+  height: 75px;
+  background: url("../images/zy.png") no-repeat center center;
+  background-size: 100% 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
+}
+.loading .loadcircle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: center center;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  animation: spin 1.5s linear infinite;
+  -webkit-animation: spin 1.5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+.flbtn,
+.fltact {
+  font-size: 17px;
+  padding: 10px 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  line-height: 1;
+  box-sizing: border-box;
+  flex: auto;
+  -webkit-flex: auto;
+}
+.fltact {
+  margin: 10px 25px;
+  border-radius: 5px;
+}
+.tag,
+.tago,
+.tagb,
+.tagy {
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.selbtn {
+  line-height: 1.8;
+  margin-right: 7px;
+}
+.mark,
+.chkboxCirle .mark,
+.chkboxSquare .mark {
+  transform-origin: center right;
+  -webkit-transform-origin: center right;
+  transform: translateX(35%) translateY(-50%) rotate(45deg);
+  -webkit-transform: translateX(35%) translateY(-50%) rotate(45deg);
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+}
+.chkboxCirle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.chkboxCirle .mark {
+  width: 6px;
+  height: 12px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.chkboxCirle.checked {
+  border: 0 none;
+  background-color: #f03e06;
+}
+.chkboxSquare {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid #999;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+.chkboxSquare .mark {
+  width: 5px;
+  height: 10px;
+  border-bottom: 1px solid #999;
+  border-right: 1px solid #999;
+}
+.popmenu {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 200;
+  /* display:none; */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+.popmenu .menu {
+  width: 160px;
+  border-radius: 5px;
+}
+.fbbtn {
+  font-size: 12px;
+  color: #fff;
+  padding: 15px 0;
+}
+.imgBox,
+.imgChkBox {
+  max-width: 87px;
+  max-height: 88px;
+  height: 88px;
+  position: relative;
+  margin: 5px auto;
+  padding: 0 5px;
+  overflow: hidden;
+}
+.imgBox.thumbnail {
+  width: 92px;
+  height: 70px;
+}
+.imgBox img,
+.imgChkBox img {
+  width: 100%;
+  height: 100%;
+}
+.imgChkBox .chkboxCirle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.editBox {
+  width: 90px;
+  height: 67px;
+  border-radius: 3px;
+  position: relative;
+}
+.editBox span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -2px;
+  margin-top: -12px;
+}
+.editBox span:first-child,
+.editBox span:last-child {
+  width: 3px;
+  height: 25px;
+  background-color: #ddd;
+}
+.editBox span:last-child {
+  transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+.content-box {
+  background-color: #fff;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  line-height: 2;
+}
+.tabs {
+  min-height: 2.5em;
+}
+.tabs .tab {
+  height: 100%;
+  line-height: 2.5;
+  min-height: 40px;
+  text-align: center;
+  border-radius: 0;
+}
+.tabs .tab:after {
+  height: 100%;
+  width: 0;
+  content: '';
+  visibility: hidden;
+}
+.tabs .tab.active {
+  color: #f03e06;
+}
+.tabs .tab > a {
+  color: #333;
+}
+.tabs .tab > a.active {
+  color: #f03e06;
+}
+.cdtilst,
+.vtabs {
+  line-height: 2.5;
+  text-align: left;
+}
+.cdtilst .flbtn.tab,
+.vtabs .flbtn.tab {
+  color: #999;
+  border-bottom: 1px solid #ededed;
+}
+.cdtilst .flbtn.cdti,
+.vtabs .flbtn.cdti {
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  border-radius: 0;
+}
+.cdtilst .flbtn.active,
+.vtabs .flbtn.active {
+  color: #f03e06;
+}
+.popbg {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.dlgbox {
+  position: fixed;
+  border-radius: 5px;
+  min-width: 60%;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  padding: 0 25px;
+  z-index: 100;
+}
+.dlgbox .dlgct {
+  padding: 25px 0;
+  font-size: 100%;
+  border-bottom: 1px solid #979797;
+}
+.dlgbox .cancel {
+  font-size: 100%;
+  border-right: 1px solid #979797;
+  box-sizing: border-box;
+}
+.dlgbox .sure {
+  font-size: 100%;
+  box-sizing: border-box;
+}

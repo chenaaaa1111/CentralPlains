@@ -1,0 +1,115 @@
+.l{float: left;}
+.r{float:right;}
+.cl{clear:both;}
+.n{font-weight:normal;font-style:normal;}
+.b{font-weight: bold;}
+.i{font-style: italic;}
+.fa{font-family: Arial;}
+.fg{font-family: Georgia;}
+.ft{font-family: Tahoma;}
+.fl{font-family: Lucida Console;}
+.fs{font-family: '宋体';}
+.fw{font-family: '微软雅黑';}
+.tc{text-align: center;}
+.tr{text-align: right;}
+.tl{text-align: left;}
+.tdl{text-decoration: underline;}
+.tdn,.tdn:hover,a.tdl:hover{text-decoration: none;}
+.g0{color:#000;}
+.g3{color:#333;}
+.g6{color:#666;}
+.g9{color:#999;}
+.red{color:red;}
+.wh{color:white;}
+.vm{vertical-align: middle;}
+.vtb{vertical-align:text-bottom;}
+.vt{vertical-align: top;}
+.vn{vertical-align: -2px;}
+.vimg{margin-bottom: -3px;}
+.m0{margin:0;}
+.m{
+	@l:left;
+	@r:right;
+	@t:top;
+	@b:bottom;
+	@flags:l,r,t,b;
+	@list:1,2,5,10,20;
+	.loop(1);
+	.loop(@counter) when(@counter<=length(@flags)){
+		@flag:extract(@flags,@counter);
+		@property:@@flag;
+		.loop(1,@property);
+		.loop(@count,@property) when(@count<=length(@list)){
+			@value:extract(@list,@count);
+			&@{flag}@{value}{
+				 margin-@{property}:unit(@value,px); 
+			}
+			.loop(@count+1,@property);
+		};
+		.loop(@counter+1);
+	}
+} 
+.p{
+	@l:left;
+	@r:right;
+	@t:top;
+	@b:bottom;
+	@flags:l,r,t,b;
+	@list:1,2,5,10,20;
+	.loop(1);
+	.loop(@counter) when(@counter<=length(@flags)){
+		@flag:extract(@flags,@counter);
+		@property:@@flag;
+		.loop(1,@property);
+		.loop(@count,@property) when(@count<=length(@list)){
+			@value:extract(@list,@count);
+			&@{flag}@{value}{
+				 padding-@{property}:unit(@value,px); 
+			}
+			.loop(@count+1,@property);
+		};
+		.loop(@counter+1);
+	}
+}
+.fs{
+	.loop(12);
+	.loop(@count) when(@count<=30){
+		&@{count}{
+			font-size:unit(@count,px);
+		}
+		.loop(@count+1);
+	};
+}
+.rel{position: relative;}
+.abs{position:absolute;}
+.dn{display: none;}
+.db{display:block;}
+.dib{display:inline-block;-moz-inline-stack:inline-block;}
+.di{display:inline;}
+.ovh{overflow: hidden;}
+.ovs{overflow:scroll;}
+.vh{visibility: hidden;}
+.vv{visibility:visible;}
+.lh{
+	.loop(6);
+	.loop(@count) when (@count<=12){
+		@value:2*@count;
+		&@{value}{
+			line-height: unit(@value,px);
+		}
+		.loop(@count+1);
+	}
+}
+.fix{
+	*zoom:1;
+	&:before,&:after{
+		content: '';
+		overflow:hidden;
+		height:0;
+		line-height: 0;
+		visibility: hidden;
+		clear:both;
+		display:block;
+	}
+}
+.z{zoom:1;}

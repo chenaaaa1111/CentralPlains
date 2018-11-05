@@ -1,0 +1,84 @@
+body,html{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+}
+#download{
+    width: 15rem;
+    height: 100%;
+}
+#iframe{
+    width:100%;
+    height: 100%;
+}
+.resultWrapper{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    
+}
+.mesage{
+    bottom:3.5rem;
+    position: absolute;
+    color:#e8372b;
+    font-size: 0.8rem;
+    width: 100%;
+}
+.mesage span{
+    margin-left: 10px;
+}
+.rwTitle{
+    padding:2.76rem 0 3.32rem 0;
+    
+}
+.rwTitle img{
+    width: 11.92rem;
+    height: 1.6rem;
+}
+.rwBackground{
+    width: 9.6rem;
+    height: 7.76rem;
+}
+.rwText{
+    font-size: .72rem;
+    font-family:PingFangSC-Regular;
+    color:#151515;
+    letter-spacing: .0308rem;
+    text-align:center;
+    line-height: .96rem;
+    padding-bottom: .32rem;
+}
+.rwBottom{
+    position: absolute;
+    left: 50%;
+    width: 2.72rem;
+    height: .8rem;
+    margin-left: -1.36rem;
+    bottom: 2rem;
+}
+.dn{
+    display:none;
+}
+.dlBtn{
+    position: absolute;
+    width: 10rem;
+    height: 2rem;
+    line-height: 2rem;
+    /* background: #ff3250; */
+    background: red;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    color: #fff;
+    text-align: center;
+    bottom: 1.6rem;
+    left: 50%;
+    margin-left: -5rem;
+    opacity: 0;
+    
+}

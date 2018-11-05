@@ -1,0 +1,134 @@
+.ivalign,
+.ivalign:after {
+  vertical-align: middle;
+}
+.ivalign,
+.ivalign:after {
+  display: inline-block;
+  -moz-inline-stack: inline-block;
+}
+.row .col,
+.grids .grid-item,
+.grids-4 .grid-item {
+  float: left;
+}
+.row .col.s1 {
+  width: 8.33333333%;
+}
+.row .col.s2 {
+  width: 16.66666667%;
+}
+.row .col.s3 {
+  width: 25%;
+}
+.row .col.s4 {
+  width: 33.33333333%;
+}
+.row .col.s5 {
+  width: 41.66666667%;
+}
+.row .col.s6 {
+  width: 50%;
+}
+.row .col.s7 {
+  width: 58.33333333%;
+}
+.row .col.s8 {
+  width: 66.66666667%;
+}
+.row .col.s9 {
+  width: 75%;
+}
+.row .col.s10 {
+  width: 83.33333333%;
+}
+.row .col.s11 {
+  width: 91.66666667%;
+}
+.row .col.s12 {
+  width: 100%;
+}
+.row:after,
+.grids:after,
+.grids-4:after {
+  content: '';
+  overflow: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+.fixed,
+.fixedt,
+.fixedb {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+.fixedt {
+  top: 0;
+}
+.fixedb {
+  bottom: 0;
+}
+.grids .grid-item,
+.grids-4 .grid-item {
+  position: relative;
+}
+.grids-4 .grid-item {
+  width: 25%;
+}
+.flbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+}
+.flbox .fll {
+  flex: none;
+  -webkit-flex: none;
+}
+.flbox .flr {
+  flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  /* IE 10 */
+  -webkit-box-flex: 1;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;
+  /* OLD - Firefox 19- */
+}
+.ivalign {
+  height: 100%;
+}
+.ivalign:after {
+  height: 100%;
+  width: 0;
+  content: '';
+  visibility: hidden;
+}
+.col2 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+}
+.col2 .colfix {
+  flex: none;
+  -webkit-flex: none;
+}
+.col2 .colauto {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  flex: auto;
+  -webkit-flex: auto;
+}

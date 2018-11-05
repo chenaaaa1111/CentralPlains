@@ -1,0 +1,55 @@
+.microphone {
+  max-width: 9px;
+  max-height: 15px;
+}
+.moreicon {
+  max-width: 18px;
+  max-height: 4px;
+}
+.flticon {
+  width: 12px;
+  height: 12px;
+  background: url("../images/filter.png") no-repeat center center;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 5px;
+}
+.active .flticon {
+  background: url("../images/filter_sel.png") no-repeat center center;
+}
+.btcicon {
+  max-width: 18px;
+  max-height: 20px;
+  vertical-align: middle;
+}
+.up,
+.indicator.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.down,
+.indicator.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.left,
+.indicator.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.right,
+.indicator.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.indicator {
+  width: 8px;
+  height: 8px;
+  line-height: 8px;
+  border-bottom: 3px solid #ccc;
+  border-right: 3px solid #ccc;
+  transform-origin: center center;
+  -webkit-transform-origin: center center;
+  display: inline-block;
+}

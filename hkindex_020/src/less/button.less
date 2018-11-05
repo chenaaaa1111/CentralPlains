@@ -1,0 +1,292 @@
+@import (once, reference) 'mixins/variables.less';
+@import (once, reference) 'mixins/common_mixins.less';
+@import (once, reference) 'common.less';
+@import (once, reference) 'global.less';
+@import (once, reference) 'layout.less';
+.loadingbg{
+    position:fixed;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    z-index: 99;
+    background:rgba(0,0,0,0);
+}
+.loading{
+    width:75px;
+    height:75px;
+    background:url("@{baseimgs}/zy.png") no-repeat center center;
+    background-size:100% 100%;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto; 
+    z-index:100;
+    .loadcircle{
+        width:100%;
+        height:100%;
+        position:absolute;
+        left:0;
+        top:0;
+        transform-origin:center center;
+        -webkit-transform-origin:center center;
+        -moz-transform-origin:center center;
+        animation:spin 1.5s linear infinite;
+       -webkit-animation: spin 1.5s linear infinite; 
+    }
+    @keyframes spin{
+        0%{
+            transform:rotate(0);
+            -webkit-transform:rotate(0);
+        }
+        100%{
+            transform:rotate(360deg);
+            -webkit-transform:rotate(360deg);
+        }
+    }
+    @-webkit-keyframes spin{
+        0%{
+            transform:rotate(0);
+            -webkit-transform:rotate(0);
+        }
+        100%{
+            transform:rotate(360deg);
+            -webkit-transform:rotate(360deg);
+        }
+    }
+}
+.flbtn:extend(.fcf,.tc){
+    font-size: 17px;
+    padding:10px 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    line-height: 1;
+    box-sizing: border-box;
+    flex: auto;
+    -webkit-flex:auto;
+}
+
+.fltact:extend(.flbtn,.db){
+    margin:10px 25px;
+    border-radius: 5px;
+}
+
+.tag:extend(.bdr50, .dib,.bdr50,.fcf,.tc){
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.tago:extend(.tag,.bgo),.tagb:extend(.tag,.bgb),.tagy:extend(.tag,.bgy) {
+}
+
+.selbtn:extend(.g9, .fsp14, .tc, .bdcc, .dib, .plr10) {
+    line-height: 1.8;
+    margin-right: 7px;
+}
+.mark {
+    transform-origin:center right;
+    -webkit-transform-origin: center right;
+    transform:translateX(35%) translateY(-50%) rotate(45deg);
+    -webkit-transform:translateX(35%) translateY(-50%) rotate(45deg);
+    display: inline-block;
+    position:absolute;
+    top:50%;
+}
+
+.mark(@w: 1px;@color;@sw;@sh;) {
+    &:extend(.mark);
+    width: @sw;
+    height: @sh;
+    border-bottom: @w solid @color;
+    border-right: @w solid @color;
+}
+
+.chkboxCirle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    .mark:extend(.dn) {
+        .mark(@color: #fff;@sw:6px;@sh:12px;);
+    }
+    &.checked {
+        border: 0 none;
+        background-color: #f03e06;
+    }
+}
+
+.chkboxSquare {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border:1px solid #999;
+    text-align: center;
+    display:inline-block;
+    position:relative;
+    .mark {
+        .mark(@color: #999;@sw: 5px;@sh:10px;);
+    }
+    &.checked {
+        .mark:extend(.dn) {}
+    }
+}
+
+.popmenu{
+    position:absolute;
+    right:5px;
+    top:5px;
+    z-index: 200;
+    /* display:none; */
+    transform:translateZ(0);
+    -webkit-transform:translateZ(0);
+    .menu:extend(.bgff,.p10){ 
+        width:160px;
+        border-radius: 5px;
+    }
+}
+
+.fbbtn:extend(.fixedt) {
+    font-size: 12px;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.imgBox {
+    &:extend(.db);
+    .imagetmpl("@{baseimgs}/imageset.png");
+    height:88px;
+    &.thumbnail {
+        width:image-width("@{baseimgs}/preview.png")*0.5;
+        height:image-height("@{baseimgs}/preview.png")*0.5;
+    }
+    position:relative;
+    margin:5px auto;
+    padding:0 5px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.imgChkBox {
+    &:extend(.imgBox);
+    img:extend(.imgBox img) {};
+    .chkboxCirle {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+.editBox:extend(.bdcc) {
+    width: 90px;
+    height: 67px;
+    border-radius: 3px;
+    position: relative;
+    span {
+        .cross(@color: #ddd;
+        @width: 3px;
+        @size: 25px);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -2px;
+        margin-top: -12px;
+    }
+}
+
+.content-box {
+    background-color: #fff;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    line-height: 2;
+    &.m0:extend(.m0) {}
+    .ctboxtl,
+    .ctboxct {
+        &:extend(.p10);
+    }
+    .ctboxtl:extend(.bdf5) {};
+}
+
+.tabs {
+    min-height: 2.5em;
+    .tab {
+        .ivalign();
+        line-height: 2.5;
+        min-height: 40px;
+        text-align: center;
+        border-radius: 0;
+        &.active {
+            color: #f03e06;
+        }
+        &>a{
+            color:#333;
+            &.active{
+                color: #f03e06;
+            }
+        }
+    }
+}
+
+.cdtilst,.vtabs{
+    &:extend(.ml15);
+    line-height: 2.5;
+    text-align: left;
+    .flbtn{
+        &:extend(.g9, .fsp14,.tl,.m0);
+        &.tab{
+            color:#999;
+            border-bottom:1px solid #ededed;
+        }
+        &.cdti{
+            color:#333;
+            border-bottom:1px solid #ddd;
+            position:relative;
+            border-radius: 0;
+        }
+        &.active {
+            color: #f03e06;
+        }
+   }
+}
+.popbg{
+    position:fixed;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    z-index:99;
+    background-color: rgba(0,0,0,0.5);
+}
+.dlgbox{
+    &:extend(.bgff);
+    position:fixed;
+    border-radius: 5px;
+    min-width:60%;
+    left:50%;
+    top:50%;
+    transform:translate3d(-50%,-50%,0);
+    -webkit-transform:translate3d(-50%,-50%,0);
+    padding:0 25px;
+    z-index: 100;
+    .dlgct:extend(.g3,.tc){
+        padding:25px 0;
+        font-size: 100%;
+        border-bottom:1px solid #979797;
+    }
+    .cancel:extend(.g9,.tc){
+        font-size: 100%;
+        border-right:1px solid #979797;
+        box-sizing: border-box;
+    }
+    .sure:extend(.g3,.tc){
+        font-size: 100%;
+        box-sizing: border-box;
+    }
+}
