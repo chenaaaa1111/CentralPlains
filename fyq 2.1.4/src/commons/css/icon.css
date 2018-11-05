@@ -1,0 +1,30 @@
+.up,
+.indicator.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.down,
+.indicator.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.left,
+.indicator.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.right,
+.indicator.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.indicator {
+  width: 8px;
+  height: 8px;
+  line-height: 8px;
+  border-bottom: 3px solid #cccccc;
+  border-right: 3px solid #cccccc;
+  transform-origin: center center;
+  -webkit-transform-origin: center center;
+  display: inline-block;
+}

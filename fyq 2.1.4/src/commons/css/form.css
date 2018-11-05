@@ -1,0 +1,21 @@
+.ipt,
+.txtarea {
+  color: #666;
+}
+.ipt {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 75%;
+}
+.txtarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 75%;
+}
+.required::-webkit-input-placeholder {
+  color: red;
+}
+.required::-moz-placeholder {
+  color: red;
+}

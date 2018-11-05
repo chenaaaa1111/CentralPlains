@@ -1,0 +1,53 @@
+@import (once, reference) 'mixins/variables.less';
+@import (once, reference) 'mixins/common_mixins.less';
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow(@w: 1px;
+@color;
+@sw;
+@sh;
+) {
+    width: @sw;
+    height: @sh;
+    line-height: @sh;
+    border-bottom: @w solid @color;
+    border-right: @w solid @color;
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    display: inline-block;
+    &.up:extend(.up) {}
+    ;
+    &.down:extend(.down) {}
+    ;
+    &.left:extend(.left) {}
+    ;
+    &.right:extend(.right) {}
+    ;
+}
+
+.indicator {
+    .arrow(@w: 3px;
+    @color: #ccc;
+    @sw: 8px;
+    @sh: 8px;
+    );
+}

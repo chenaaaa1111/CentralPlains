@@ -1,0 +1,133 @@
+.share_header{
+    background:#ff6a6a;
+    height: 260px;
+
+}
+.share_{
+    display: flex;
+}
+.touxiangdiv{
+    flex: 2;
+    text-align: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+}
+.telItem{
+    flex: 8;
+}
+.share_{
+    padding-top: 100px;
+}
+.touxiangdiv img{
+    max-width: 100%;
+}
+.share_container{
+    background: #ffffff;
+    padding: 0px 20px 0px 20px;
+}
+.share_items{
+    display: flex;
+}
+.img_item{
+    flex: 3;
+}
+.img_item img{
+    width: 100%;max-width: 100%;
+}
+.font_item{
+    flex: 4;
+    padding-left: 20px;
+}
+.font_item h2{
+    font-size:14px ;
+}
+.font_item p{
+    color: #999999;
+    font-size: 12px;
+}
+.font_item p>span{
+    color: #ee4848;
+}
+.yuyue{
+    flex: 3;
+    line-height:80px;
+}
+.yuyue button{
+    background:#ee4848;
+    color: #ffffff;
+    font-size: 16px;
+
+}
+.telItem{
+    color: #ffffff;
+}
+.share_items{
+    border-bottom: 1px solid #999999;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    height: 117px;
+}
+.patopnone{
+    padding-top: 0px;
+}
+.telphone_{
+    font-size: 16px;
+}
+.proCl{
+    font-size: 12px;
+}
+.proCl >span{
+    margin-left: 20px;
+    font-size: 18px;
+}
+.yuyuekuang{
+    width: 335px;
+    height: 230px;
+    background: #ffffff;
+    position: absolute;
+    top:50%;
+    margin-top: -115px;
+    z-index: 999;
+
+}
+.mengban{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background: #000000;
+    opacity: 0.5;
+    z-index: 100;
+}
+.yuyuekuang ul{
+    padding: 22px 22px;
+}
+.yuyuekuang ul> li >input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: solid 1px #cccccc;
+
+}
+.yanzhenCode{
+    width: 106px;
+    height: 30px;
+    right: 0px;
+    bottom: 5px;
+    background: #fff;
+    border: 1px solid #ee4848;
+    border-radius: 5px;
+    color:#ee4848;
+
+}
+.anniu >button{
+    width: 45%;
+    height: 30px;
+}
+.anniu >button:last-child{
+    margin-left: 5%;
+    background:#ee4848;
+    color: #ffffff;
+    margin-top: 30px;
+}

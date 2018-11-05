@@ -1,0 +1,43 @@
+html,
+body {
+  height: 100%;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+}
+.wrap {
+  width: 100%;
+}
+.content {
+  padding-left: 0.4rem;
+  padding-top: 0.4rem;
+  overflow: hidden;
+}
+.content .contentList li {
+  width: 100%;
+  border-bottom: 0.04rem solid #f0f0f0;
+  position: relative;
+}
+.content .contentList li p {
+  max-width: 13.36rem;
+  line-height: 2rem;
+  height: 2rem;
+  font-size: 0.56rem;
+  color: #333333;
+  letter-spacing: 0.0068rem;
+  text-align: left;
+}
+.content .contentList li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15rem;
+  line-height: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+  padding: 0 0.4rem;
+}
+.content .contentList li span {
+  width: 1.6rem;
+  height: 2rem;
+  background: url(../images/rightIcon.png) no-repeat 0 0.76rem;
+  background-size: 0.32rem 0.52rem;
+}

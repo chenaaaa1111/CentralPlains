@@ -1,0 +1,1 @@
+webpackJsonp([1,17],{630:function(n,exports){"use strict";var i={cityApiUrl:"//apifang.centaline.com.cn/index/fyqapp/city/readlist",wxSignApiUrl:"//apifang.centaline.com.cn/index/fyqapp/WeChat/GetShareInfo"};n.exports=i}});

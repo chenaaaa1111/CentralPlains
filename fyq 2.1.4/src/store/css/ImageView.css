@@ -1,0 +1,44 @@
+#imgViewContainer {
+  background: #000000;
+  padding-top: 10px;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+#imgViewContainer .imageTab li {
+  display: inline-block;
+  width: 25% ;
+  text-align: center;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+}
+#imgViewContainer .imageTab li.activety {
+  color: #ee4848;
+  padding-bottom: 10px;
+}
+.imageContainer {
+  margin-top: 200px;
+}
+.imageTab {
+  text-align: center;
+  white-space: nowrap;
+  padding-bottom: 100px;
+}
+#tabContainer {
+  overflow: hidden;
+}
+#tabParent {
+  overflow: scroll;
+}
+#tabParent::-webkit-scrollbar {
+  display: none;
+}
+.swiper-pagination {
+  display: none;
+}
+html,
+body,
+#app {
+  height: 100%;
+}

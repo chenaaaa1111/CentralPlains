@@ -1,0 +1,48 @@
+@r:25rem;
+html,body{
+    height: 100%;
+    font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+}
+.wrap{
+   width:100%;
+}
+
+.content{
+    padding-left: 10/@r;
+    padding-top: 10/@r;
+    overflow: hidden;
+    .contentList li{
+        width: 100%;
+        border-bottom:1/@r solid #f0f0f0;
+        position: relative;
+        
+        p{
+            max-width: 334/@r;
+            line-height: 50/@r;
+            height: 50/@r;
+            font-size:14/@r;
+            color:#333333;
+            letter-spacing:0.17/@r;
+            text-align:left;
+        }
+        a{
+            position: absolute;
+            top: 0;
+            left: 0;
+//          background: red;
+            width: 375/@r;
+            line-height:50/@r;
+            height:50/@r ;
+            vertical-align: middle;
+            padding:0 10/@r;
+        }
+        span{
+            width: 40/@r;
+            height: 50/@r;
+            background: url(../images/rightIcon.png) no-repeat 0 19/@r ;
+            background-size: 8/@r 13/@r;
+        }
+        
+    }
+    
+}

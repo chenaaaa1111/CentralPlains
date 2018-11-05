@@ -1,0 +1,122 @@
+@import (once, reference) 'mixins/variables.less';
+@import (once, reference) 'mixins/common_mixins.less';
+@import (once, reference) 'layout.less';
+@import (once, reference) 'common.less';
+@import (once, reference) 'button.less';
+
+/*经纪人列表样式*/
+.agentHeader{
+    .row:extend(.g6, .fsp12,.tc){
+        padding:1.5em;
+    }
+}
+.agentList{
+	position: fixed;
+	top:3.75em;
+	left:0;
+	right: 0;
+	bottom: 10px;
+  .row:extend(.g6, .fsp12,.tc){
+      padding:0.83em;
+  }
+}
+
+/*注册用户统计*/
+.licol{
+  width:80px;
+  height:1.8em;
+  display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	-o-box-align:center;
+	-ms-box-align:center;
+	box-align:center;
+	justify-content: center;
+	a:extend(.g3){
+		&.active{
+			color:#3babff
+		}
+	}
+}
+
+/*注册用户统计首页*/
+.statsHeader:extend(.tc,.fcf){
+	padding: 34px 0;
+  background-color: rgba(248,110,97,0.90);
+  .cur{
+  	font-size: 70px;
+  }
+}
+
+.statsTab{
+	margin:-20px 26px 0;
+	border-radius: 5px;
+	background-color: #fff;
+
+}
+
+/*案场管理*/
+.selectContainer{
+	background-color: #fff;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	-o-box-align:center;
+	-ms-box-align:center;
+	box-align:center;
+	justify-content:center;
+}
+.selectExt{
+	width:200px;
+	padding:5px 0;
+	.Select-control{
+		background-color: rgba(0,0,0,0);
+		border:0 none;
+	}
+	&.is-focused:not(.is-open) > .Select-control {
+	  border:0 none;
+	  box-shadow:none;
+	}
+	&.is-open > .Select-control {
+	  background-color:rgba(0,0,0,0);
+	  border:0 none;
+	}
+	.Select-value-label{
+		font-size: 13px;
+	}
+	.Select-menu-outer{
+		/*box-shadow: none;*/
+		border: 0 none;
+	}
+	.Select-option{
+			font-size: 13px;
+			background-color:rgba(0,0,0,0);
+	}
+}
+.selectOptions{
+	background-color: rgba(0,0,0,0);
+}
+
+/*水平滚动区域*/
+.scrollArea{
+	min-width: 100%;
+}
+
+
+/*免责声明*/
+.remark{
+	margin:5px 10px;
+	font-size: 12px;
+	color:#999
+}
+
