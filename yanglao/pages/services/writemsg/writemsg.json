@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "写留言",
+  "usingComponents": {
+    "recorder": "../../../components/recorder/recorder"
+  }
+}

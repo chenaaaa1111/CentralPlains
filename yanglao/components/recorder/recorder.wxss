@@ -1,0 +1,63 @@
+/* components/recorder/recorder.wxss */
+@import '/styles/svgs.wxss';
+.mask{
+  position:fixed;
+  left:0;
+  top:0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.speech-btn .icon-yuyin{
+  font-size: 50rpx;
+  color:#FF3333;
+}
+.speech{
+  width:580rpx;
+  /* height:600rpx; */
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  z-index: 999;
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,0.05);
+  border-radius: 10rpx;
+}
+
+.speech .speech-playing{
+  margin:60rpx auto;
+}
+
+.speech .icon-yuyin1{
+  font-size: 80rpx;
+  color:#fff;
+}
+
+.speech .bg-circle{
+  width: 280rpx;
+  height: 280rpx;
+  background-color:#F7B579;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 280rpx;
+  margin: 0 auto;
+}
+
+.speech .tips{
+  font-size: 44rpx;
+  color:#4A4A4A;
+  text-align: center;
+  font-weight: bold;
+  margin-top:20rpx;
+}
+
+.speech .overtips{
+  font-size: 32rpx;
+  color:#4A4A4A;
+  text-align: center;
+  border-top:1rpx solid #eee;
+  height: 108rpx;
+  line-height: 108rpx;
+}
