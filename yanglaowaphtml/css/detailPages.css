@@ -1,0 +1,84 @@
+.statusSpan{
+    background: #F62F5E;
+    font-size: 12px;
+    color: #fff;
+    margin-left: 14px;
+    padding: 2px 5px;
+    vertical-align: middle;
+}
+.swiper-container div{
+    font-size: 16px !important;	
+}
+.ui-list-img-square{
+  background:#f5a623;
+  border-radius:7px;
+  width:64px;
+  height:54px;
+}
+.qr_code{
+  position: relative;
+     
+}
+.ui-list-function .ui-list-info{
+  padding-right: 0;
+}
+.attention{
+  margin-top: 60px;
+  margin-left: 16px;
+  font-size: 18px;
+}
+.detailInform{
+  padding-top:22px;
+  padding-bottom:22px;
+}
+.bgf2{
+  background: #f2f2f2;
+  padding: 1px  16px 20px 16px;
+  margin-top: 26px;
+  border-radius: 10px;
+}
+.ui-list-info p.textFeeBig{
+  height: 47px;
+	line-height: 53px;margin-left: 
+	20px;font-size:36px;color:#d0021b;
+}
+.blueCard a{
+  color: #fff;
+}
+.hospt{
+  color: #000;
+}
+.hosptype{
+  color: #2A2A2A ;
+}
+.priceType{
+  color: #4a4a4a;
+}
+.twotitle{
+  margin-top: 20px;
+}
+.feeItemtl{
+  width: 90px;
+  display: inline-block;
+  text-align: right;
+}
+.nopd{
+  padding-bottom: 0;
+}
+body{
+    padding-bottom: 40px;
+}
+html,body{
+  position: relative;
+}
+.attention{
+  margin-top: 0;
+}
+.ui-list-info{
+  padding-top: 0px;margin-top: -8px;
+  overflow: auto;
+}
+.totolFee{
+  margin-top: 37px;
+  /* margin-bottom: 12px; */
+}

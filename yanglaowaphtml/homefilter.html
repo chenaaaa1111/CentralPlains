@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>居家筛选</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/Apartment.css">
+    <link rel="stylesheet" href="css/switchbutton.css">
+</head>
+<body>
+<div class="header bd_b_H" style="box-shadow: none" >
+    <a href="javascript:history.go(-1)" class="treeline wh"><img src="images/comeback.png" /></a>
+    居家筛选
+</div>
+<div class=" pd_b_50">
+    <div class="filterlists bd_b pd_rl_20">
+        <span>日间照料</span><span class="rightspcon">否 <label><input class="mui-switch  mui-switch-animbg" type="checkbox" ></label> 是</span>
+    </div>
+    <div class="filterlists bd_b pd_rl_20">
+        <span>短托服务</span><span class="rightspcon">否 <label><input class="mui-switch" type="checkbox" ></label> 是</span>
+    </div>
+    <div class="filterlists bd_b pd_rl_20">
+        <span>老年餐</span><span class="rightspcon">否 <label><input class="mui-switch" type="checkbox" ></label> 是</span>
+    </div>
+    <div class="filterlists bd_b pd_rl_20">
+        <span>送餐服务</span><span class="rightspcon">否 <label><input class="mui-switch" type="checkbox" ></label> 是</span>
+    </div><div class="filterlists bd_b pd_rl_20">
+    <span>助浴服务</span><span class="rightspcon">否 <label><input class="mui-switch" type="checkbox" ></label> 是</span>
+</div>
+    <div class="filterlists bd_b pd_rl_20">
+        <span>助洁服务</span><span class="rightspcon">否 <label><input class="mui-switch" type="checkbox" ></label> 是</span>
+    </div>
+    <div class="filterlists bd_b pd_rl_20">
+        <span>维修服务</span><span class="rightspcon">否 <label><input class="mui-switch" type="checkbox" ></label> 是</span>
+    </div>
+    <div class="filterlists bd_b pd_rl_20">
+        <span>理疗服务</span><span class="rightspcon">否 <label><input class="mui-switch" type="checkbox" ></label> 是</span>
+    </div>
+    <div class="filterlists bd_b pd_rl_20">
+        <span>无障碍出行服务</span><span class="rightspcon">否 <label><input class="mui-switch" type="checkbox" ></label> 是</span>
+    </div>
+    <div class="filterlists bd_b pd_rl_20">
+        <span>适老化改造服务</span><span class="rightspcon">否 <label><input class="mui-switch" type="checkbox" ></label> 是</span>
+    </div>
+    <div class="filterlists bd_b pd_rl_20">
+        <span>短托服务</span><span class="rightspcon">否 <label><input class="mui-switch " type="checkbox" ></label> 是</span>
+    </div>
+    <div class="filterlists bd_b pd_rl_20">
+        <span>体验服务</span><span class="rightspcon">否 <label><input class="mui-switch" type="checkbox" ></label>  是</span>
+    </div>
+
+
+</div>
+<div class="botormbutonpt">
+    <input type="button" class="resetbutton width_p3" value="重置" /><input
+        type="button" class="sureButton width_p7" value="确定"/>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/setSize.js"></script>
+<script>
+    $(function () {
+        $('.resetbutton').click(function () {
+            $('.mui-switch').prop('checked',false);
+        })
+    })
+</script>
+
+</body>
+</html>

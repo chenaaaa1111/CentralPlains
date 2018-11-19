@@ -1,0 +1,26 @@
+body{
+    padding-bottom: 40px;
+    overflow-x: hidden
+}
+.needaddress{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    width: 100%;
+}
+#save_login{
+    background: #ff3333;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 17px;
+    box-sizing: border-box;
+    width: calc(100% - 50px);
+}
+.ow_list{
+    padding-left: 25px;
+}

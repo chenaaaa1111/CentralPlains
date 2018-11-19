@@ -1,0 +1,25 @@
+.container ul li{
+    padding-top: 25px;
+}
+.container {
+    margin-top: 50px;
+}
+.popupname{
+    height: 40px;
+}
+.structorName{
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.flexColum{
+    overflow: hidden;
+}
+.logoSeach {
+    position: fixed;
+    top: auto;
+    right: 5px;
+    bottom: 101px;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>行业资讯</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/2.0.0/css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/Apartment.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/needService.css">
+    <style>
+   
+    </style>
+</head>
+<body>
+    <div class="header bolds filterheader">
+        <a href="javascript:history.go(-1)" class="treeline wher"><img src="images/comeback.png" /></a>
+        <span class="ttl">我的养老需求</span>
+    </div>
+    <form action="">
+        <input class="bd_b row_list fe9 pd_rl_20 needaddress"  placeholder="希望养老的区域" />
+        <p class="row_list  pd_rl_20 nolong">离家距离</p>
+        <div>
+                <div class="ui-row-flex ui-whitespace">
+                        <div class="ui-col ui-col">
+                            <div class="ui-form-item ui-form-item-radio nopadding ">
+                                <label class="ui-radio" for="radio">
+                                    <input type="radio" name="radio">
+                                </label>
+                                <span>1公里内</span>
+                            </div>
+                        </div>
+                        <div class="ui-col ui-col"> 
+                                <div class="ui-form-item ui-form-item-radio nopadding ">
+                                        <label class="ui-radio" for="radio">
+                                            <input type="radio" name="radio">
+                                        </label>
+                                        <span>3公里内</span>
+                                    </div>
+                        </div>
+                        <div class="ui-col ui-col">
+                                <div class="ui-form-item ui-form-item-radio nopadding ">
+                                        <label class="ui-radio" for="radio">
+                                            <input type="radio" name="radio">
+                                        </label>
+                                        <span>5公里内</span>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="ui-row-flex ui-whitespace">
+                            <div class="ui-col ui-col">
+                                <div class="ui-form-item ui-form-item-radio nopadding ">
+                                    <label class="ui-radio" for="radio">
+                                        <input type="radio" name="radio">
+                                    </label>
+                                    <span>本市内</span>
+                                </div>
+                            </div>
+                            <div class="ui-col ui-col"> 
+                                    <div class="ui-form-item ui-form-item-radio nopadding ">
+                                            <label class="ui-radio" for="radio">
+                                                <input type="radio" name="radio">
+                                            </label>
+                                            <span>本市周边</span>
+                                        </div>
+                            </div>
+                            <div class="ui-col ui-col">
+                                    <div class="ui-form-item ui-form-item-radio nopadding ">
+                                            <label class="ui-radio" for="radio">
+                                                <input type="radio" name="radio">
+                                            </label>
+                                            <span>不限</span>
+                                        </div>
+                            </div>
+                        </div>
+        </div>
+        <div class="fil_popups family_w3">
+				<span>养老机构的价位</span>
+				<div class="fil_check">
+					<select class="sildedown family_w3 col4 fe9" dir="rtl">
+						<option>3000-6000元／月</option>
+						<option>3000-8000元／月</option>
+						<option>8000-10000元／月</option>
+						<option>8000-10000元／月</option>
+						<option>8000-10000元／月</option>
+						<option>8000-10000元／月</option>
+					</select>
+					<span class="downpic"><img src="images/dropRight.png" style="width: 7px;height: auto;" /></span>
+				</div>
+            </div>
+            <div class="fil_popups family_w3">
+                    <span>养老服务</span>
+                    <div class="fil_check">
+                        <select class="sildedown  fe9" dir="rtl">
+                            <option>日间照护</option>
+                            <option>3000-8000元／月</option>
+                            <option>8000-10000元／月</option>
+                            <option>8000-10000元／月</option>
+                            <option>8000-10000元／月</option>
+                            <option>8000-10000元／月</option>
+                        </select>
+                        <span class="downpic"><img src="images/dropRight.png" style="width: 7px;height: auto;" /></span>
+                    </div>
+                </div>
+                <textarea class="reqMessage" placeholder="请写下您的需求，200字以内"></textarea>
+                <div class="btn">
+                        <a href="#" class="my_login" id="save_login">
+                                保存我的需求
+                      </a>
+        <p class="ow_list fe9  pd_b_20 fs14" style="
+        letter-spacing:0;
+        line-height:22px;
+        text-align:left;">
+        输入您的需求后，我们可以为您推送相关服务信息。
+            </p>    
+    </form>
+         <script src="js/jquery.min.js"></script>
+         <script src="js/setSize.js"></script>
+<script>
+     var value=[{name:11,age:12,TagCode:33},{name:11,age:12,TagCode:43}]; 
+     var sj={name:11,age:12,TagCode:33}
+     var historyList = value.filter((item) => {
+					return item.TagCode !=sj.TagCode;
+                    cosole.log(sj.TagCode);
+				});
+				console.log('11111111111',historyList)			
+                    historyList.unshift(sj);             
+				if (historyList.length > 10) {
+					historyList = historyList.slice(0, 10);
+				}
+				console.log("333",historyList)
+</script>
+</body>
+</html>

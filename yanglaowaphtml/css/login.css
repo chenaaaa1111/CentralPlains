@@ -1,0 +1,35 @@
+.lgpass >input{
+  width: 100%;
+}
+.lgpassmobile input{
+    height: 100%;
+}
+.login{
+    height: 48px;
+    width: 92%;
+    height:48px;
+    font-size: 24px;
+    margin-top: 120px;
+}
+.lgpass input{
+    height: 100%;
+    border-bottom:1px solid #d6d6d6;
+}
+.ui-btn-wrap{
+    margin-bottom: 34px;
+}
+.ui-form-item{
+    height: 65px;
+}
+.ui-form-item label{
+    font-size: 16px;
+}
+.header .treeline.login{
+    width: 24px;
+    height: 22px;
+}
+.ipSend{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}

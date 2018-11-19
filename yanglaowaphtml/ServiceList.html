@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="renderer" content="webkit">
+	    <meta name="viewport" content="width=device-width,maximum-scale=1.0, minimum-scale=1.0"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <title>找养老驿站</title>
+	    <meta name="description" content="">
+	    <meta name="keywords" content="">
+	    <link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/Apartment.css">
+		<link rel="stylesheet" href="css/serviceList.css">
+
+	    <style>
+	    	
+	    </style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header bd_b">
+				<span  class="treeline morelist"><img src="images/homeIcon.png" /></span>
+					养老服务
+					<a href="SearchMechanism.html" class="search"><img src="images/search2.png" /></a>
+					<a href="seachHome.html" class="grouping"><img src="images/mapfind.png" /></a>
+					<ul class="flex bd_b bqfl" style="display: flex">
+							<li class="flexItem1" onclick="toggle('qy')">区域
+								<ul class="ultables" id="qy" style="top: 118px;">
+								   <li class="bd_b" data-x="116.289286" data-y="39.867104" onclick="blockHandle(event)">丰台</li>
+								   <li class="bd_b" data-x="116.423241" data-y="39.934855" onclick="blockHandle(event)">东城</li>
+								   <li class="bd_b" data-x="116.373223" data-y="39.918477" onclick="blockHandle(event)">西城</li>
+								   <li class="bd_b" data-x="116.453712" data-y="39.92733"  onclick="blockHandle(event)">朝阳</li>
+								</ul>
+							</li>
+							<li class="" style="line-height: 63px;"><span style="width: 1px;height: 27px;display:inline-block;background: #cecece"></span></li>                 
+							<li class="flexItem1"> <a href="FilterPages.html?from=1" style="display:inline-block;width:100%">筛选</a></li> 
+						</ul>
+		</div>
+		<div class="container  " >
+				<ul class="collection">
+						<li class=" bodnone">
+								<a href="ServiceDetails.html" class="houselinks bothside flex">
+									<div class="inforname serbgpic"></div>
+									<div class="cityname flexColumRow cityOth">
+										<div class="popupname ">华威西里社区养老服务
+											驿站</div>
+										<div class="p5  addrs"  >
+											<!-- <div class="operator   addrsItem">地址：</span></div> -->
+											<span class=" col_2  addrsItem  ellips ">华威西里33号楼</span>
+										</div>
+										<div class="addrs" >
+											<!-- <div class=" operator   addrsItem"  >运营商:</div> -->
+											<span class=" col_2  addrsItem">九龄丽湾养老服务有限公司</span>
+										</div>
+									</div>
+								</a>
+							</li>		
+							<li class=" bodnone">
+									<a href="ServiceDetails.html" class="houselinks bothside flex">
+										<div class="inforname serbgpic"></div>
+										<div class="cityname flexColumRow cityOth">
+											<div class="popupname ">诚和敬望京养老服务驿站</div>
+											<div class="p5  addrs"  >
+												<span class=" col_2  addrsItem ellips">华威西里33号楼</span>
+											</div>
+											<div class="addrs" >
+												<span class=" col_2  addrsItem ellips">九龄丽湾养老服务有限公司</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class=" bodnone">
+										<a href="ServiceDetails.html" class="houselinks bothside flex">
+											<div class="inforname serbgpic"></div>
+											<div class="cityname flexColumRow cityOth">
+												<div class="popupname ">望京养老服务驿站</div>
+												<div class="p5  addrs"  >
+													<span class=" col_2  addrsItem ellips">望京北路39号院5号楼底商101</span>
+												</div>
+												<div class="addrs" >
+													<span class=" col_2  addrsItem ellips">望京北路39号院</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class=" bodnone">
+											<a href="ServiceDetails.html" class="houselinks bothside flex">
+												<div class="inforname serbgpic"></div>
+												<div class="cityname flexColumRow cityOth">
+													<div class="popupname ">望京养老服务驿站</div>
+													<div class="p5  addrs"  >
+														<span class=" col_2  addrsItem ellips ">望京北路39号院5号楼底商101</span>
+													</div>
+													<div class="addrs" >
+														<span class=" col_2  addrsItem ellips">望京北路39号院</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class=" bodnone">
+												<a href="ServiceDetails.html" class="houselinks bothside flex">
+													<div class="inforname serbgpic"></div>
+													<div class="cityname flexColumRow cityOth">
+														<div class="popupname ">望京养老服务驿站</div>
+														<div class="p5  addrs "  >
+															<span class=" col_2  ellips">望京北路39号院5号楼底商101</span>
+														</div>
+														<div class="addrs" >
+															<span class=" col_2  addrsItem ellips">望京北路39号院</span>
+														</div>
+													</div>
+												</a>
+											</li>
+											<!-- <p class="array">排序</p>	 -->
+				</ul>	
+				<div class="logoSeach">
+						<a href="quickFilter.html">
+								<img src="./images/seachquickly.png" class="seachCircle"  />
+						</a>
+				</div>			
+				<div class="popup_window"></div>
+			</div>
+			<div class="citynames family_w3">
+				<div class="listname col3">不限</div>
+				<div class="listname">海淀</div>
+				<div class="listname">朝阳</div>
+				<div class="listname">东城</div>
+				<div class="listname">石景山</div>
+				<div class="listname">西城</div>
+				<div class="listname">丰台</div>
+				<div class="listname">顺义</div>
+				<div class="listname">门头沟</div>
+				<div class="listname">大兴</div>
+				<div class="listname">通州</div>
+				<div class="listname">昌平</div>
+				<div class="listname">北京周边</div>
+			</div>
+			<div class="navbarList pd_rl_20" style="padding:120 0px 20px 20px">
+					<div class="myInfo pd_rl_20 ">
+						<div class="whriteCircle mar_t_17">
+						</div>
+						 <a href="login.html">
+							 <div class="logintext mar_t_17"  style="margin-left: 16px;">
+								请登录
+							 </div>
+						</a>
+					</div>
+					<div class="mar_bom_20 " style="margin-top: 128px">
+						<a href="index.html"><img class="navIcondifa" src="images/navhome.png" />首页</a>
+					</div>
+					<div class="mar_bom_20"> <a href="ListShow.html"><img class="navIcondif" src="images/constuctor.png" />养老机构</a>
+					</div>
+					<div class="mar_bom_20 vermi">
+						<a href="ServiceList.html"><img src="images/navfindlv.png" />养老服务</a>
+					</div>
+					<div class="mar_bom_20">
+						<a href="informationNew.html"><img src="images/navfindmessage.png" />养老资讯</a>
+					</div>
+					<div class="mar_bom_20">
+						<a href="my.html"><img src="images/navfindtranver.png" />我的</a>
+					</div>
+			</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/setSize.js"></script>
+		<script src="js/lib.js"></script>
+	</body>
+</html>

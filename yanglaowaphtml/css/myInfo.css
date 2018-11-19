@@ -1,0 +1,127 @@
+body{background-color: #FFFFFF;width:100%;margin: 0;}
+a{text-decoration: none;color:#333;}
+/*人信息*/
+li{ list-style-type: none;}
+
+.top-header{z-index: 1;  width: 100%;  background-color: #fff; display: table; border-bottom: solid 1px rgba(0,0,0,0.2);}
+.top-header h3{ font-size: 24px;line-height: 48px;  color: #333; margin: 0 30%; display: table-cell;  font-weight: normal; text-align: center;height: 48px;}
+.top-header .text{display: table-cell; text-align: center; width: 20%; font-size: 1.5em; color: #db3752; }
+.top-header .texta{ color: #999;}
+.top-header a{display: table-cell;}
+.top-header .icona{ width: 8.5%; padding-left: 5%; vertical-align: middle;}/*只能添加图标*/
+.top-header .iconb{ width: 11%;padding-right: 5%; vertical-align: middle;}/*只能添加图标*/
+.top-header .text-top{ width: 11%;color: #999;font-size: 1.169em; vertical-align: middle;}/*能添加文字*/
+.top-header img{ width: 100%;}
+.contaniner{ width: 100%;  overflow: hidden;}
+/*个人信息*/
+.self-data{ padding:0; width: 100%; margin-top: 1%; background-color: #fff}
+.self-data li{ width: 100%; box-sizing: border-box; 
+    position: relative; border-bottom: solid 1px #ccc;}
+.self-data li a{ }
+.self-data li label.rIcon{
+			width: 3%;
+			display: blocks;
+			top: 6px;
+			margin-left: 5%;
+			position: absolute;
+			right: 35px;
+                }
+.self-data li span img{  width: 100%; margin:60% 0;}
+.self-data li p{font-size: 1em;display: inline-block }
+input::input-placeholder { /* WebKit browsers */ 
+    color: ＃000 !important;   
+    font-size: 100px;
+    background: #333;
+    } 
+    input::-webkit-input-placeholder{
+        color: ＃000 !important;  
+    }
+    input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+        color: ＃000;  
+    }
+    input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+        color: ＃000;  
+    }
+    input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+        color: ＃000;  
+    }
+    .self-data li.timeLi{
+        padding-left: 19px;
+        padding-right: 13px;
+    }
+.btn{margin-top:18%;}
+.my_login{ 
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    font-size: 24px;
+    display: block;
+    background-color: #FF0000;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.2em;
+    height: 48px;
+    line-height: 48px;
+}
+.pd_rl_20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.flex{
+	display: flex;
+}
+.flexitem1{
+	flex: 1;
+}
+.fs18{
+	font-size: 18px;
+}
+.tabList{
+    padding: 15px 20px;
+    line-height: 30px;
+
+}
+.fc9b{
+	color: #9b9b9b;
+}
+.textCenter{
+	text-align: center;
+}
+.whouse{
+
+}
+.ui-radio input:checked:after {
+    width: 10px;
+    height: 10px;
+    left: 4px;
+    top: 3px;
+}
+.ui-radio input{
+    width: 15px;
+    height: 15px;
+    vertical-align: baseline
+}
+.ui-radio input:before{
+    width: 15px;
+    height: 15px;
+}
+.rsex{
+	margin-right: 20px;
+}
+.ui-select select {
+    -webkit-appearance: none;
+    border: 0;
+    background: 0 0;
+    width: 53%;
+    padding-right: 9px;
+    padding-left: 55px;
+}
+.rIcon {
+	width: 13px;height: 13px;
+}
+.rIcon img{
+	max-width: 100%;
+}
+.timeLi{
+	height: 56px;
+	line-height: 56px;
+}  

@@ -1,0 +1,70 @@
+/* .logoSeach{
+    position: fixed;
+    top: 63%;
+    right: 0px;
+} */
+.ui-list-single .ui-list-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.ui-list li h4 {
+    font-size: 18px;
+    line-height: 24px;
+}
+.ui-list-single h4 {
+    -webkit-box-flex: 1;
+}
+.ui-nowrap {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#allmap{
+    width: 100%;height: 600px;
+}
+.ui-list>li.ui-border-t:first-child, .ui-list>li:first-child>.ui-border-t .bd_b{
+    border-bottom: 1px solid #e6e6e6;
+}
+.BMap_Marker{
+    background-size: cover !important;
+}
+.ui-list>li{
+    padding-left: 12px;
+    display: -webkit-box;
+    background: #FE2B36;
+    color: #fff;
+    margin-left: 0;
+}
+.ui-txt-info{
+    color: #fff;
+}
+.cityOth{
+    margin-top: -1px;
+}
+.ui-list-single .ui-list-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.ui-list li h4 {
+    font-size: 18px;
+    line-height: 24px;
+}
+.ui-list-single h4 {
+    -webkit-box-flex: 1;
+}
+.ui-nowrap {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#allmap{
+    width: 100%;height: 600px;
+}

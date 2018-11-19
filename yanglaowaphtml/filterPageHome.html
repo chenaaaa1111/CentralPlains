@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>机构筛选</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Apartment.css">
+    <link rel="stylesheet" href="css/switchbutton.css">
+    <style type="text/css">
+    	body{
+    		padding-bottom: 80px;
+    		overflow: scroll;
+		}
+		select option{
+			color: #bfbfbf;
+		}
+		.servicebox span.quickspan {
+			width: auto;
+			margin-right: 2%;
+			padding: 2% 2.2%;
+       }
+
+    </style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header bolds filterheader ">
+			<a href="javascript:history.go(-1)" class="treeline wh"><img src="images/comeback.png" /></a>
+			<span class="ttl">养老机构筛选</span>
+		</div>
+		<!--内容-->
+		<div class="fil_contant">
+			<!--费用区间-->
+			<div class="fil_popups family_w3">
+				<span>费用区间</span>
+				<div class="fil_check">
+					<select class="sildedown  fcbf" dir="rtl">
+						<option>请选择费用区间</option>
+						<option>3000元/人/月以下</option>
+						<option>3000-6000元/人/月</option>
+						<option>6000-9000元/人/月</option>
+						<option>9000-12000元/人/月</option>
+						<option>12000-15000元/人/月</option>
+						<option>15000-18000元/人/月</option>
+						<option>18000-21000元/人/月</option>
+						<option>21000-24000元/人/月</option>
+						<option>24000元/人/月以上</option>
+					</select>
+					<span class="downpic"><img src="images/sildedown.png" /></span>
+				</div>
+			</div>
+			<!--机构性质-->
+			<div class="fil_popups ">
+				<span>机构性质</span>
+				<div class="fil_check">
+					<select class="sildedown  fcbf" dir="rtl">
+						<option>请选择机构性质</option>
+						<option>公办公营</option>
+						<option>公办民营</option>
+						<option>民办非营利</option>
+						<option>民办营利</option>
+						<option>国有营利</option>
+					</select>
+					<span class="downpic"><img src="images/sildedown.png" /></span>
+				</div>
+			</div>
+			
+			<!--运营服务-->
+			<div class="fil_popups  fil_service">
+					<span class="fw">照顾类型</span>
+					<div class="servicebox serset" style="padding-bottom: 27px;">
+						<span class="quickspan">自理</span>
+						<span class="quickspan">非自理</span>
+						<span class="quickspan">失智照护</span>
+						<span class="quickspan">日托</span>
+						<span class="quickspan">短托</span>
+					</div>
+			</div>
+			
+			<!-- //服务对象
+			<div class="fil_popups family_w3 fil_service" style="border-bottom: none;padding-bottom: 32px;">
+				<span class="fw">服务对象</span>
+				<div class="servicebox ly">
+				    <span class="careOldMen">自理老人</span>
+					<span class="careOldMen">轻度护理老人</span>
+					<span class="careOldMen">认知症老人</span>
+					<span class="careOldMen">完全护理老人</span>
+					<span class="careOldMen btnlong">三无、五保老人</span>
+				</div>
+			</div> -->
+			<div class="myemptybox"></div>
+			<!--开业时间-->
+			<div class="fil_popups family_w3">
+				<span>开业时间</span>
+				<div class="fil_check">
+					<select class="sildedown fcbf " dir="rtl">
+						<option>请选择开业时间</option>
+						<option>1995年以前</option>
+						<option>1995-2000</option>
+						<option>2000-2005</option>
+						<option>2005-2010</option>
+						<option>2010-2015</option>
+						<option>2015年以后</option>
+					</select>
+					<span class="downpic"><img src="images/sildedown.png" /></span>
+				</div>
+			</div>
+			
+			<!--床位数-->
+			<div class="fil_popups family_w3">
+				<span>床位数</span>
+				<div class="fil_check">
+					<select class="sildedown fcbf" dir="rtl">
+						<option >请选择床位数量</option>
+						<option>10张以下</option>
+						<option>10-30张</option>
+						<option>30-100张</option>
+						<option>100-200张</option>
+						<option>200-300张</option>
+						<option>300-500张</option>
+						<option>500-1000张</option>
+						<option>1000以上</option>
+					</select>
+					<span class="downpic"><img src="images/sildedown.png" /></span>
+				</div>
+			</div>
+			
+			<!--是否支持医保-->
+			<div class="fil_popups family_w3">
+				<span>是否支持医保</span>
+				<div class="fil_check">
+                     <label><input class="mui-switch  mui-switch-animbg" type="checkbox" ></label> 
+				</div>
+			</div>
+			
+			<div class="fil_popups family_w3">
+				<span>周边是否有医疗机构</span>
+				<div class="fil_check">
+                     <label><input class="mui-switch  mui-switch-animbg" type="checkbox" ></label> 
+				</div>
+			</div>
+			
+			<div class="fil_popups family_w3">
+				<span>是否有绿色转诊通道</span>
+				<div class="fil_check">
+					<!--<span><input type="radio" name="radio3" />是</span>-->
+					<!--<span><input type="radio" name="radio3" />否</span>-->
+                 <label><input class="mui-switch  mui-switch-animbg" type="checkbox" ></label> 
+				</div>
+			</div>
+		</div>
+		<div class="btn_box">
+			<span class="reset">取消</span>
+			<span class="determine">确定</span>
+		</div>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/setSize.js"></script>
+		<script src="js/lib.js"></script>
+        <script>
+$(function(){
+		   $(".determine").click(function(){
+				var from=GetQueryString('from')
+				if(from==1){
+					location.href="Home.html"
+				}else{
+					location.href="ListShow.html"
+				}
+			});
+
+			 $('.reset').click(function () {
+                $('select').each(function (key,val) {
+                    console.log(val);
+
+                    $($(val).find('option').get(0)).attr("selected",true);
+                });
+            });
+})
+           
+        </script>
+	</body>
+</html>

@@ -1,0 +1,104 @@
+.swiper-container {
+    margin: 0 !important;
+    font-size: 0;
+}
+.content h4{
+    text-align: center;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 900;
+    color:#333;
+
+}
+.userIcon{
+    width: 40px;
+    height: 40px;
+}
+.positionDiv{
+    width: 85px;
+    height: 40px;
+    background: #333;
+    background-color: rgba(0,0,0,0.5);
+    line-height: 40px;
+    font-size: 21px;
+    text-align: center;   
+     border-radius: 20px;
+}
+.positionDiv img{
+    width: 18px;
+    height: 15.6px;
+    margin-right: 4px;
+}
+.content {
+    background: #ffffff;
+
+}
+.content  h1{
+   height: 40px;
+    line-height: 60px;
+    color:#333;
+    padding: 0 20px; 
+    font-size: 24px;
+
+}
+.marqueeMore{
+    overflow: visible;
+    background: #fff;
+    position: relative;
+    height: 84px;
+    line-height: 50px;
+}
+.qr_code {
+    position: relative;
+    overflow: hidden;
+    padding: 0px 0 20px 37px;
+    background: #fff;
+}
+.newitem h3{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.swiper-pagination-bullet-active{
+    background: #ff5a5a;
+}
+.titileImg{
+    height: 37px;
+}
+.text_center{
+    text-align: center
+}
+.swiper-slide{
+    height: 94px;
+}
+.swiper-container div{
+  font-size: 16px !important;
+}
+.cardtitle img{
+    vertical-align: text-top;
+    margin-top: 19px;
+    margin-right: 12px;
+}
+.sqItem{
+    animation-name: resize;
+    animation-duration: 0.800s;
+    animation-iteration-count:2;
+    animation-direction: alternate;
+    animation-timing-function: alternate;
+}
+@keyframes resize
+{
+ 0%{margin-top: 20px}
+ 100%{margin-top: -20px}
+
+
+}
+.beian{
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #999999;
+}
+

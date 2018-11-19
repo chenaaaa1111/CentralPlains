@@ -1,0 +1,383 @@
+/*
+KISSY CSS Reset
+理念：清除和重置是紧密不可分的
+特色：1.适应中文 2.基于最新主流浏览器
+*/
+
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* 设置默认字体 */
+body,button, input, select, textarea { /* for ie */
+    font-family: "微软雅黑",宋体,黑体,Tahoma, Helvetica, Arial;
+}
+
+/*清除浮动*/
+.clearfix:after{content:"\0020"; height:0; display:block; clear:both;}
+.clearfix{zoom:1}
+h1 { font-size: 20px; font-weight: normal; /* 18px / 12px = 1.5 */ }
+h2 { font-size: 18px; font-weight: normal; line-height: 24px;}
+h3 { font-size: 16px; font-weight: normal;}
+h4, h5, h6 { font-size: 100%; font-weight: normal;}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+q:before, q:after { content: ''; }
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: none; } /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { overflow-y: scroll; }
+.bor_der_radius1{ 
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.bor_der_radius1{ 
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.tab_els{  
+	border: 1px solid #E8D6D6;
+	border-collapse: collapse;
+}
+.ver-a-tical{    
+	vertical-align: middle;
+}
+
+/*public color*/
+.col{
+	color: #999;
+}
+.col_2{
+	color: #666;
+}
+.col_3{
+	color: #333;
+}
+.col3{
+	color: #ff5a5a;
+}
+.col4{
+	color: #999;
+}
+.blues{
+	color: #539FE7;
+}
+.bolds{
+	font-weight: bold;
+}
+.mar_right_10{
+	margin-right: 10px;
+}
+/*左边距*/
+.mar_left_3{
+	margin-left: 3px;
+}
+.mar_left_5{
+	margin-left: 5px !important;
+}
+.mar_left_5_i{
+    margin-left: 5px;
+}
+.mar_left_10{
+	margin-left: 10px;
+}
+.mar_left_15{
+	margin-left: 15px;
+}
+.mar_left_20{
+	margin-left: 20px;
+}
+.mar_ft_10{
+	margin: 0 10px;
+}
+.fc58{
+	color: #585858;
+}
+/*右边距*/
+.mar_right_1{
+	margin-right: 1px;
+}
+.mar_right_3{
+	margin-right: 3px;
+}
+.mar_right_5{
+	margin-right: 5px;
+}
+.mar_right_7{
+	margin-right: 7px;
+}
+.mar_right_10{
+	margin-right: 10px;
+}
+.mar_right_15{
+	margin-right: 15px;
+}
+.mar_right_20{
+	margin-right: 20px;
+}
+.mar_right_30{
+    margin-right: 30px;
+}
+/*上边距*/
+.mar_top_5{
+	margin-top: 5px !important; 
+}
+.mar_top_6{
+	margin-top: 6px;
+}
+.mar_top_7{
+	margin-top: 7px;
+}
+.mar_top_8{
+	margin-top: 8px;
+}
+.mar_top_9{
+	margin-top: 9px;
+}
+.mar_top_10{
+	margin-top: 10px !important;
+}
+.mar_top_13{
+	margin-top: 13px;
+}
+.mar_top_15{
+	margin-top: 15px;
+}
+.mar_top_20{
+	margin-top: 20px !important;
+}
+.mar_top_25{
+    margin-top: 25px !important;
+}
+.mar_top_30{
+    margin-top: 30px !important;
+}
+.mar_top_40{
+    margin-top: 40px !important;
+}
+.mar_bom_5{
+	margin-bottom: 5px;
+}
+.mar_bom_10{
+    margin-bottom: 10px;
+}
+.mar_bom_20{
+	margin-bottom: 20px;
+}
+.mar_bom_30{
+	margin-bottom: 30px;
+}
+.mar_bom_40{
+	margin-bottom: 40px;
+}
+.family_w6{
+	color:#333333;
+	font-size: 14px;
+    font-family:HiraginoSansGB-W6;
+}
+.family_w3{
+	font-family:HiraginoSansGB-W3;
+	font-size: 14px;
+    color:#333333;
+}
+.family_Regular{
+	font-family:NotoSansHans-Regular;
+	font-size:18px;
+	color:#4a4a4a;
+	letter-spacing:0;
+	text-align:left;
+}
+.w_18{
+	display: inline-block;
+}
+.bor_sid{
+	border-top: 1px solid #eee;
+}
+.textover{
+	width: 172px;
+	word-wrap:break-word; 
+	word-break:break-all;
+}
+.fl{
+	float: left;
+}
+.fs12{
+	font-size: 12px;
+}
+.fs14{
+	font-size: 14px;
+}
+.fs15{
+	font-size: 15px;
+}
+.fs20{
+	font-size: 20px;
+}
+.fs30{
+    font-size: 30px;
+}
+.fgray{
+    color: #666666;
+}
+.relative_z_3{
+	position: relative;
+	top: 3px;
+}
+.pd_b_20{
+    padding-bottom:20px;
+}
+.pd_b_15{
+	padding-bottom: 15px;
+}
+.pd_b_40{
+	padding-bottom: 40px;
+}
+.pd_t_10{
+    padding-top:10px;
+}
+.pd_t_20{
+	padding-top: 10px;
+}
+.pd_t_20{
+    padding-top: 20px;
+}
+.pd_t_40{
+    padding-top: 20px;
+}
+.pd_rl_20{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.pd_rl_10{
+    padding:0 10px;
+}
+.ff3{
+	color: #ff3333;
+}
+.pa_l_5_i{
+    padding-left: 5px !important;
+}
+.absolute_m{
+    position: absolute;
+
+}
+.ab_right{
+    right: 20px;
+}
+.relative_m{
+    position: relative;
+}
+.pd_b_10{
+    padding-bottom: 10px;
+}
+.pd_b_20{
+    padding-bottom: 20px;
+}
+.pd_b_50{
+    padding-bottom: 50px;
+}
+.pd_b_30{
+    padding-bottom: 30px !important;
+}
+.fs33{
+	color: #333;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+    outline:none;
+
+}
+textarea { -webkit-appearance: none;}
+.bd_b_H{
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+.f99{
+	color: #999;
+}
+.f33{
+	color:#333;
+}
+.f66{
+    color: #666666;
+}
+.fz_20{
+	font-size: 20px !important;
+}
+.fs24{
+	font-size: 24px !important;
+}
+.fs18{
+	font-size: 18px !important;
+}
+.fs30{
+	font-size: 30px !important;
+}
+.fs20{
+	font-size: 20px !important;
+}
+.fe9{
+	color:#9b9b9b !important;
+}
+.fff{
+	color: #fff;
+}
+.sc4a{
+	color:#4a4a4a !important ;
+}
+.fcaff{
+	color:#007aff;
+}
+.bd_t{
+	border-top:1px solid  #e6e6e6;
+}
+.mar_t_17{
+	margin-top: 17px;
+}
+.mar_top_50{
+	margin-top: 50px;
+}
+.mar_b_35{
+	margin-bottom: 35px;
+}
+.fcbf{
+	color: #bfbfbf;
+}
+.fc9b{
+	color: #9b9b9b;
+}
+.fcf62{
+    color: #F62F5E;
+}

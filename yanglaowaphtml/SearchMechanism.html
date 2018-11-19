@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>搜索页</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Apartment.css">
+    <link rel="stylesheet" href='css/searchMechanism.css'>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header bolds searchsha">
+			<a href="javascript:history.go(-1)" class="treeline wh"><img src="images/comeback.png" /></a>
+			搜索
+		</div>
+		<!--搜索输入框-->
+		<div class="Mechcontant">
+			<div class="search">
+				<input type="text" id="seachInput" placeholder="请输入养老机构名称或地址" />
+                <img src="images/seachIc.png" class="seachImg" />
+				<span class="searchconfirm"><span id="seachvalue">找机构</span>
+                    <ul class="seachul" >
+                        <li data-mes="请输入养老机构名称或地址">找机构</li>
+                        <li data-mes="请输入养老服务名称或地址">找服务</li>
+                        <li data-mes="请输入关键字">养老资讯</li>
+                    </ul>
+                </span>
+                <ul>
+                    
+                </ul>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/setSize.js"></script>
+		<!--<script>
+			var gWidth = document.body.clientWidth, gPicWidth = 750, gmax = gWidth / gPicWidth * 20;
+	        if (gmax > 14) gmax = 14;
+	        gmax = parseInt(gmax);
+	        document.body.style.fontSize = gmax + "px";
+	        document.documentElement.style.fontSize = gmax + "px";
+		</script>-->
+    <script>
+        $(function () {
+            $('.seachul li').click(function (ev) {
+
+                $('#seachInput').attr('placeholder',$(this).data('mes'));
+                $('#seachvalue').html($(this).html());
+                $('.seachul').hide(10);
+            });
+            $('.searchconfirm').click(function () {
+                $('.seachul').show();
+            })
+        })
+    </script>
+	</body>
+</html>

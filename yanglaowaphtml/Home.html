@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="renderer" content="webkit">
+	    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>	
+	    <title>养老机构</title>
+	    <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/2.0.0/css/frozen.css">
+        <style>         
+        </style>
+	    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	    <link rel="stylesheet" type="text/css" href="css/Apartment.css">
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/Home.css"/>
+
+	</head>
+	<body>
+		<div class="contant">
+			<!--头部区域-->
+			<div class="header bd_b">
+				<span  class="treeline morelist"><img src="images/homeIcon.png" /></span>
+				养老机构
+				<a href="SearchMechanism.html" class="search"><img src="images/search2.png" /></a>
+				<a href="ListShow.html" class="grouping"><img src="images/grouping.png" /></a>
+				<ul class="flex bd_b bqfl">
+                    <li class="flexItem1" onclick="toggle('qy')">区域
+                        <ul class="ultables" id="qy" style="top: 118px;">
+                           <li class="bd_b" data-x="116.289286" data-y="39.867104" onclick="blockHandle(event)">丰台</li>
+                           <li class="bd_b" data-x="116.423241" data-y="39.934855" onclick="blockHandle(event)">东城</li>
+                           <li class="bd_b" data-x="116.373223" data-y="39.918477" onclick="blockHandle(event)">西城</li>
+                           <li class="bd_b" data-x="116.453712" data-y="39.92733"  onclick="blockHandle(event)">朝阳</li>
+                           <li class="bd_b" data-x="116.453712" data-y="39.92733"  onclick="blockHandle(event)">朝阳</li>
+                        </ul>
+                    </li>
+                    <li class="" style="line-height: 63px;"><span style="width: 1px;height: 27px;display:inline-block;background: #cecece"></span></li>                 
+                        <li class="flexItem1"> <a href="filterPageHome.html?from=1" style="display:inline-block;width:100%">筛选</a></li>                   
+                </ul>
+			</div>			
+			<!--map-->
+			<div id="allmap" style="width:100%;overflow:hidden;display:block"></div>
+        </div>
+        <div class="navbarList pd_rl_20" style="padding:120 0px 20px 20px">
+				<div class="myInfo pd_rl_20 ">
+					<div class="whriteCircle mar_t_17">
+					</div>
+					 <a href="login.html">
+						 <div class="logintext mar_t_17"  style="margin-left: 16px;">
+							请登录
+						 </div>
+					</a>
+				</div>
+				<div class="mar_bom_20 " style="margin-top: 128px">
+					<a href="index.html"><img class="navIcondifa" src="images/navhome.png" />首页</a>
+				</div>
+				<div class="mar_bom_20"> <a href="ListShow.html"><img class="navIcondif" src="images/constuctor.png" />养老机构</a>
+				</div>
+				<div class="mar_bom_20 vermi">
+					<a href="ServiceList.html"><img src="images/navfindlv.png" />养老服务</a>
+				</div>
+				<div class="mar_bom_20">
+					<a href="informationNew.html"><img src="images/navfindmessage.png" />养老资讯</a>
+				</div>
+				<div class="mar_bom_20">
+					<a href="my.html"><img src="images/navfindtranver.png" />我的</a>
+				</div>
+		</div>
+      
+        <div class="abfooter" style="display:none">  
+                <ul style="margin-bottom: 16px;" class="ui-list ui-list-single ui-list-link">
+                        <li class="">
+                            <div class="ui-list-info">
+                                <h4 class="ui-nowrap ">东城区</h4>
+                                <div class="ui-txt-info">更多养老机构</div>
+                            </div>
+                           
+                        </li>
+                        <p class="line" style="height: 1px;background: #d6d6d6;width: 93%;margin: 0 auto;"></span>
+                    </ul>                      
+                    <a href="ServiceDetails.html" class="houselinks bothside flex">
+                            <div class="inforname serbgpic"></div>
+                            <div class=" cityOth flexColum">
+                                    <div class=" structorName f1">双井寸草学知园</div>
+                                    <div class="p5 " style="" >
+                                        <span class="optery col_2   oneLine fe9">望京北路39号院5号楼底商101</span>
+                                    </div>
+                                    <div class="f1  flex oneLine" >
+                                        <div class="  likter">费用:</div>
+                                        <span class="optery col_2  oneLine"><span class="fcf62 fs18">8000-9700 </span>元/人/月</span>
+                                    </div>
+                                    <div class="Popularity f1  oneLine">
+                                            <span class="prityspan ">医疗</span><span class="prityspan ">医保</span><span class="prityspan ">绿通</span>
+                                    </div>
+                                </div>
+                            
+                        </a>
+                        <div class="flexBottom  bc9">
+                                <div class="oneLine smalltext">照料类型：自理 非自理 失智照护 日托 短托</div>
+                        </div> 
+        </div>
+        <div class="logoSeach">
+            <a href="quickFilter.html">
+                    <img src="./images/seachquickly.png" class="seachCircle"  />
+            </a>
+       </div>
+        <div class="popup_window"></div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=38b7fa7950ce5a308ff49f95ea19402a"></script>
+    <script src="js/setSize.js"></script>
+    <script src="js/lib.js"></script>	
+    <div class="noresult" style="display: none">
+        <div>
+            <img/>
+            <p>对不起，没有找到相关机构信息</p>
+            <p>请再试试别的条件吧</p>
+        </div>
+    </div>
+     <script>
+            // 百度地图API功能
+            var x='116.4109587052';
+            var y='40.0157022522';
+        
+            baidu(x,y);
+            /*自动定位到当前城市*/
+
+            function baidu(x,y){
+                if(!x || !y){
+                    function myFun(result){
+                        var cityName = result.name;
+                        map.setCenter(cityName);
+                        console.log(result)
+                    }
+                    var myCity = new BMap.LocalCity();
+                    myCity.get(myFun);
+                }
+                map = new BMap.Map("allmap");
+                map.centerAndZoom(new BMap.Point(x,y), 13);
+                   /*添加地图控制器*/
+                var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+                map.addControl(top_left_navigation);
+                //启动鼠标滚动
+                map.enableScrollWheelZoom();
+                /*$.ajax({
+                    //可以从后台拉取数据，并把select绑定change事件
+                });*/
+                
+            var cilist=[{cname:'东城区',"eary":[116.4109587052,40.0157022522],num:6},{cname:'西城区',"eary":[116.372648,39.928658],"num":8}]
+            var pointcircle,opts;
+            for(var j=0;j<cilist.length;j++){
+                var label='';
+                 pointcircle = new BMap.Point(cilist[j].eary[0],cilist[j].eary[1]);	
+                 opts = {
+                        position : pointcircle,    // 指定文本标注所在的地理位置
+                        offset   : new BMap.Size(-50,-120)    //设置文本偏移量
+                }
+                //  label = new BMap.Label("<span class='add' data-x='"+cilist[j].eary[0]+"' data-y='"+cilist[j].eary[1]+"'>"+cilist[j].cname
+                //  +"</span>"+"<span class='num'>"+cilist[j].num+"个</span>", opts);  // 创建文本标注对象
+                 label = new BMap.Label("<span class='add' data-x='"+cilist[j].eary[0]+"' data-y='"+cilist[j].eary[1]+"'>"+cilist[j].cname
+                 +"</span>", opts); 
+                label.setStyle({
+                     color : "#fff",
+                     fontSize : "24px",
+                     height : "100px",
+                     width:"100px",
+                     "borderRadius":"50%",
+                     fontFamily:"微软雅黑",
+                     "boxShadow":" 0 0 0 20px rgba(243, 106, 34, .4)",
+                     background:'#fd946a',
+                     "textAlign":"center",
+                     "data-source":"116.89898,39.6",
+                     border:"none"
+                 });
+              
+                label.addEventListener( "click",function(event){
+                    map.clearOverlays();
+                    $('.bqfl').css("display","flex");//显示筛选
+                    $('.abfooter').show();
+                   var poi= this.getPosition()
+                    map.centerAndZoom(poi, 15);
+                    console.log(this.getPosition());
+                    console.log(event);
+                    map.removeOverlay(this);
+                    //这些点的坐标应该在点击的时候动态获取
+                    var data_info = [[116.4109587052,40.0157022522,"地址：北京市朝阳区芍药居社区二社区内","芍药社区:","./images/org.png"],
+                    [116.406605,39.921585,"地址：北京市东城区东华门大街","华门大街:","./images/org.png"],
+                    [116.372648,39.928658,"地址：北京市朝阳区芍药居社区二社区内","二社区:","./images/org.png"],
+                    [116.3724811068,39.9182225756,"地址：北京市朝阳区芍药居社区三社区内","三社区:","./images/org.png"],
+                    [116.3809011068,39.9153325756,"地址：北京市朝阳区芍药居社区四社区内","四社区:","./images/org.png"],
+                    [116.4038206839,39.9152478931,"地址：北京天安门","北京天安门:","./images/org.png"],
+                    [116.3962665689,39.9110405356,"地址：国家大剧院","国家大剧院:","./images/org.png"],
+                    [116.4136903013,39.9108966857,"地址：北京市政府","北京市政府:","./images/org.png"],
+                    [116.4422971045,39.9142947315,"地址：北京市建国门","北京市建国门:","./images/org.png"],
+                    [116.4536219027,39.9360724371,"地址：北京市工人体育场","北京市工人体育场:","./images/org.png"],
+                    [116.4212407251,39.9171529885,"地址：北京市中国医学科学院","北京市中国医学科学院","./images/org.png"]
+                ];               
+                for(var i=0;i<data_info.length;i++){
+                    var myIcon ="";
+                    var  marker="";
+                    if(data_info[i][0]==x&&data_info[i][1]==y){
+                         myIcon = new BMap.Icon("./images/local.png", new BMap.Size(30,39));
+                         myIcon.setImageSize(new BMap.Size(30,39));
+                          marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]),{icon:myIcon});  // 创建标注
+                        var sContent =
+                            "<h4 style='margin:0 0 5px 0;padding:0.2em 0;font-weight:bold'>"+data_info[i][3]+"</h4>" +
+                            "<img style='float:right;margin:4px' id='imgDemo' src='"+data_info[i][4]+"' width='139' height='104' title='"+data_info[i][3]+"'/>" +
+                            "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>"+data_info[i][2]+"</p>" +
+        
+                            "</div>";
+                        map.addOverlay(marker);               // 将标注添加到地图中
+                        addClickHandler(sContent,marker);
+                        map.centerAndZoom(new BMap.Point(x,y), 13);
+                    }else{
+                         myIcon = new BMap.Icon("./images/small.png", new BMap.Size(30,39));
+                         myIcon.setImageSize(new BMap.Size(30,39));
+                         marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]),{icon:myIcon});  // 创建标注
+                        var sContent =
+                            "<h4 style='margin:0 0 5px 0;padding:0.2em 0;font-weight:bold'>"+data_info[i][3]+"</h4>" +
+                            "<img style='float:right;margin:4px' id='imgDemo' src='"+data_info[i][4]+"' width='139' height='104' title='"+data_info[i][3]+"'/>" +
+                            "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>"+data_info[i][2]+"</p>" +      
+                            "</div>";
+                        map.addOverlay(marker);               // 将标注添加到地图中
+                        addClickHandler(sContent,marker);
+                    }
+        
+                }
+                
+                })
+                map.addOverlay(label); 
+            }          
+              
+                function addClickHandler(sContent,marker){
+                    // marker.addEventListener("click",function(e){
+                    //     openInfo(sContent,e)}
+                    // );
+                    //信息窗口
+                }
+                function openInfo(sContent,e){
+                    var p = e.target;
+                    var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+                    var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
+                    map.openInfoWindow(infoWindow,point); //开启信息窗口
+                }
+            }
+            function blockHandle (event){
+                    var zx=$(event.target).attr('data-x');
+                    var zy=$(event.target).attr('data-y');
+                    
+                    map.centerAndZoom(new BMap.Point(zx,zy),15);
+                    map.clearOverlays();
+                    //移除所有overlay
+                    //这里添加overloay
+                    var  lIcon = new BMap.Icon("./images/local.png", new BMap.Size(80,60));
+                    var  lmarker = new BMap.Marker(new BMap.Point(zx,zy),{icon:lIcon}); 
+                    map.addOverlay(lmarker);  
+
+
+                }
+     </script> 
+	</body>
+</html>
